@@ -1,0 +1,7 @@
+/.idea
+/.vscode
+/node_modules
+yarn*
+npm*
+.env
+*.xml
