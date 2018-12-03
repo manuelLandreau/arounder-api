@@ -75,7 +75,7 @@ class Worker extends SCWorker {
         /**
          * In here we handle our incoming realtime connections and listen for events.
          */
-        scServer.on('connection', (socket) => {
+        scServer.on('connection', socket => {
 
             console.log('User connection');
             socket.on('neabyPlaces', (coords, next) => {

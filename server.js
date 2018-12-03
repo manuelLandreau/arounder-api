@@ -33,8 +33,8 @@ const options = {
     workerController: workerControllerPath || __dirname + '/src/worker.js',
     brokerController: brokerControllerPath || __dirname + '/src/broker.js',
     brokerOptions: {
-        host: 'localhost',
-        port: 6379
+        host: process.env.redisHost,
+        port: process.env.redisPort
     },
     workerClusterController: workerClusterControllerPath || null,
     socketChannelLimit: Number(process.env.SOCKETCLUSTER_SOCKET_CHANNEL_LIMIT) || 1000,
